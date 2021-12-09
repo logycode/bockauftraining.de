@@ -186,7 +186,7 @@ html {
     padding: 1rem 2rem;
 }
 
-.impressum, .dataprivacy {
+.impress, .dataprivacy {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -198,7 +198,7 @@ html {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */  
 }
 
-.impressum-content, .dataprivacy-content {
+.impress-content, .dataprivacy-content {
   background-color: #fefefe;
   margin: 10% auto;
   padding: 20px;

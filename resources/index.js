@@ -16,21 +16,27 @@ function showCookies() {
 }
 
 let modal = "";
-let link = "";
 
 function openModal(destinationID) {
     modal = document.getElementById(destinationID);
     modal.style.display = "block";
 }
 
-const span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close");
 
-span.onclick = () => {
+span[0].onclick = () => {
   modal.style.display = "none";
+  modal = "";
+}
+
+span[1].onclick = () => {
+  modal.style.display = "none";
+  modal = "";
 }
 
 window.onclick = event => {
   if (event.target == modal) {
     modal.style.display = "none";
+    modal = "";
   }
 }
